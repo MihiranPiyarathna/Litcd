@@ -39,3 +39,14 @@ Explanation: Your function should return k = 2, with the first two elements of n
 It does not matter what you leave beyond the returned k (hence they are underscores).
 """
 
+nums,val = [3,2,2,3], 3
+k = 0 # number of elem in nums
+_nums = []
+for elem in nums:
+    if elem != val:
+        _nums.append(elem)
+        k+=1
+nums.clear()
+print(nums, _nums, k)
+nums[:]= _nums[:]
+# return k
