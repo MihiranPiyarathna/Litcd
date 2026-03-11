@@ -66,15 +66,20 @@ if 999999 in nums:
 print( nums, k)
 # return k
 
-"""
-Good Solution from leet
-        k = 2
+# """
+# Code sample from leet
+# nums = [1,1,1]
+nums = [1,1,1,2,2,3]
+k = 2
 
-        for i in range(2, len(nums)):
-            if nums[i] != nums[k-2]:
-                nums[k] = nums[i]
-                k += 1
-            else:
-                pass
-        return k
-"""
+for i in range(2, len(nums)):
+    if nums[i] != nums[k-2]:
+        nums[k] = nums[i]
+        print( f"inside if: i-{i}, k-{k}, nums-{nums}")
+        k += 1
+    else:
+        pass
+        print( f"inside else: i-{i}, k-{k}, nums-{nums}")
+# return k
+print( f"final: i-{i}, k-{k}, nums-{nums}")
+# """
