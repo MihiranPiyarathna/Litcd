@@ -63,8 +63,5 @@ def rotate():
         k=k if k<=n else k%n
         nums [:]= nums[(n-k):] + nums
         del nums[n:]
-
-
-        nums
         
         
